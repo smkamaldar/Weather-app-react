@@ -8,6 +8,7 @@ import sunny from "../assets/images/Sunny.svg";
 const WeatherImage = ({code}) =>{
     switch (code) {
         case 1009:
+            return <img alt="cloud" src={cloud}/>
         case 1003:
             return <img alt="cloud" src={cloud}/>
         case 1009:
@@ -15,8 +16,11 @@ const WeatherImage = ({code}) =>{
         case 1240:
             return <img alt="drizzle" src={drizzle}/>
         case 1009:
+            return <img alt="rain" src={rain}/>
         case 1063:
+            return <img alt="rain" src={rain}/>
         case 1189:
+            return <img alt="rain" src={rain}/>
         case 1246:
             return <img alt="rain" src={rain}/>
         case 1000:
