@@ -17,7 +17,7 @@ function App() {
 
 function handleSearch(search){
   fetch(
-    `http://api.weatherapi.com/v1/forecast.json?key=c9180cda2103416dade100357223005&q=${search}&days=4&aqi=no&alerts=no`
+    `https://api.weatherapi.com/v1/forecast.json?key=c9180cda2103416dade100357223005&q=${search}&days=4&aqi=no&alerts=no`
   )
     .then((response) => response.json())
     .then((data) => {
