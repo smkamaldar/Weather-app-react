@@ -24,7 +24,6 @@ const WeatherImage = ({code}) =>{
         default:
            return null;
     }
-   
 }
 
 export default WeatherImage;
