@@ -21,6 +21,7 @@ function handleSearch(search){
   )
     .then((response) => response.json())
     .then((data) => {
+      console.log(data)
       if(data.error?.code !== 1006){
         localStorage.setItem("myCity", search)
         setWeatherData(data);
