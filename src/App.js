@@ -17,11 +17,10 @@ function App() {
 
 function handleSearch(search){
   fetch(
-    `https://api.weatherapi.com/v1/forecast.json?key=c9180cda2103416dade100357223005&q=${search}&days=4&aqi=no&alerts=no`
+    `https://api.weatherapi.com/v1/forecast.json?key=${process.env.REACT_APP_API_KEY}&q=${search}&days=4&aqi=no&alerts=no`
   )
     .then((response) => response.json())
     .then((data) => {
-      console.log(data)
       if(data.error?.code !== 1006){
         localStorage.setItem("myCity", search)
         setWeatherData(data);
