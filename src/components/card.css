@@ -1,0 +1,25 @@
+.card{
+    
+    display: flex;
+    justify-content:space-around;
+    max-width: 350px;
+    min-height:200px;
+    background-color:rgb(247, 247, 247);
+    border-radius: 20px;
+    margin-top: 20px;
+    box-shadow: 10px 10px 5px lightgray;
+
+}
+
+.card_content{
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: space-evenly;
+    padding: 20px 0;
+    /* justify-content: space-between; */
+    /* align-content: space-between; */
+}
+.card img{
+    width: 30%;
+}
