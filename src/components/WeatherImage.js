@@ -1,4 +1,4 @@
-import React,{useState} from "react";
+import React from "react";
 import cloudWind from "../assets/images/Cloud-wind.svg";
 import cloud from "../assets/images/Clouds.svg";
 import drizzle from "../assets/images/Drizzle.svg";
@@ -9,18 +9,18 @@ const WeatherImage = ({code}) =>{
     switch (code) {
         case 1009:
         case 1003:
-            return <img src={cloud}/>
+            return <img alt="cloud" src={cloud}/>
         case 1009:
-            return <img src={cloudWind}/>
+            return <img alt="cloudWind" src={cloudWind}/>
         case 1240:
-            return <img src={drizzle}/>
+            return <img alt="drizzle" src={drizzle}/>
         case 1009:
         case 1063:
         case 1189:
         case 1246:
-            return <img src={rain}/>
+            return <img alt="rain" src={rain}/>
         case 1000:
-            return <img src={sunny}/>
+            return <img alt="sunny" src={sunny}/>
         default:
            return null;
     }
